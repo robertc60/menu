@@ -29,8 +29,6 @@ body {
   margin-right: auto;
 }
 
-
-
 .menu-items {
     list-style-type: none;
     margin: 0;
@@ -44,8 +42,6 @@ body {
   li {
     flex-direction: column-reverse;
   }
-  
-
 
   li a, .dropbtn {
     display: inline-block;
