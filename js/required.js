@@ -2,6 +2,18 @@ const words = ["Developer        ", "Engineer        "];
 let i = 0;
 let timer;
 
+window.onscroll = function() {stickyNav()};
+var navbar = document.getElementById('navbar');
+var sticky = navbar.offsetTop;
+
+function stickyNav() {
+  if(window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
 function typingEffect() {
   let word = words[i].split("");
   var loopTyping = function() {
@@ -36,24 +48,8 @@ function deletingEffect() {
   loopDeleting();
 };
 
+
+
 typingEffect();
 
-function ValidateEmail(inputText) {
-  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  if (inputText.value.match(mailformat)) {
-    document.form1.text1.focus();
-    return true;
-  } else {
-    alert("You have entered an invalid email address!");
-    return false;
-  }
-}
 
-function openNav() {
-document.getElementById("mySidenav").style.width = "100%";
-}
-
-/* Close/hide the sidenav */
-function closeNav() {
-document.getElementById("mySidenav").style.width = "0";
-}

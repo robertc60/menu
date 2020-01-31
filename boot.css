@@ -1,5 +1,5 @@
 .navbar-logo {
-    width: 50%;
+    width: 80%;
     height: auto;
 }
 
@@ -60,9 +60,26 @@
     border-radius: 5px;
 }
 
+.typing-span{
+    color: white;
+    width: 100%;
+}
+
+.typing-span>h3, .typing-span>h4 {
+    text-align: center;
+}
 .typing{
     text-align: center;
-    width: 109%;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.stick + .content {
+    padding-top: 60px;
 }
 
 .g-drop{
