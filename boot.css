@@ -9,11 +9,13 @@
     color: white;
     display: block;
     margin-left: 2em;
+    margin-top: 2em;
 }
 
 .img-with-text img {
     display: block;
     margin-left: 1.5em;
+    
 }
 
 .dropdown:hover>.dropdown-menu {
@@ -56,4 +58,17 @@
     color: black;
     margin: 0px 5px 0px 5px;
     border-radius: 5px;
+}
+
+.typing{
+    text-align: center;
+    width: 109%;
+}
+
+.g-drop{
+    padding: 1em;
+}
+
+#drop-arrow{
+    float: right;
 }
