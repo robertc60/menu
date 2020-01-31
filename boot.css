@@ -1,3 +1,6 @@
+html * {
+    font-family: 'Raleway', sans-serif;
+}
 .navbar-logo {
     width: 80%;
     height: auto;
@@ -53,7 +56,7 @@
 
 .navbar-nav>li:hover {
     list-style-position: inside;
-    border: 3px solid #00a676;
+    border: 2px solid #00a676;
     background-color: #54575c;
     color: black;
     margin: 0px 5px 0px 5px;
